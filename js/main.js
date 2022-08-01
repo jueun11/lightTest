@@ -15,6 +15,18 @@ foryouPhoto[2].style.backgroundImage = "url(./css/image/main/foryou/3.jpg)";
 foryouPhoto[3].style.backgroundImage = "url(.//css/image/main/foryou/4.jpg)";
 
 
+//*상세페이지 이동
 
+for (let i=0; i< bestPhoto.length; i++){
+  bestPhoto[i].addEventListener('click',function(){
+    location.href="./page-renewal.html";
+  });
+}
+
+for (let i=0; i< foryouPhoto.length; i++){
+  foryouPhoto[i].addEventListener('click',function(){
+    location.href="./page-renewal.html";
+  });
+}
 
 
