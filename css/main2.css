@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100VW;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.line {
+  width: 100vw;
+  height: 3vh;
+  position: relative;
+  top: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line::before {
+  content: "";
+  flex-grow: 1;
+  /* margin: 0vw 3vw; */
+  background-color: #1B4158;
+  height: 1px;
+}
+
+.line::after {
+  content: "";
+  flex-grow: 1;
+  /* margin: 0vw 3vw; */
+  background-color: #1B4158;
+  height: 1px;
+}
+
+.line > h1 {
+  margin: 3vw;
+  font-size: 1.5rem;
+}
+
+.grid {
+  margin-top: 5vh;
+  width: 80vw;
+  display: grid;
+  gap: 20px;
+  row-gap: 50px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+}
+
+#mainBanner {
+  height: 80vh;
+  margin-top: 6vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+#mainBanner > div {
+  width: 100%;
+  height: 100%;
+}
+#mainBanner > div:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url(./image/main/main_banner_1.png);
+  padding-top: 7vh;
+  padding-left: 7vw;
+}
+#mainBanner > div:nth-child(1) > div {
+  width: 55vw;
+  height: 23vh;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 6vw;
+  padding-right: 6vw;
+}
+#mainBanner > div:nth-child(1) > div > h1 {
+  color: #fff;
+  font-family: "HSBombaram3_Thin";
+  font-weight: 100;
+  font-size: 1.8rem;
+}
+#mainBanner > div:nth-child(1) > div > p {
+  margin-top: 2vh;
+  font-family: "HSBombaram3_Thin";
+  font-weight: 100;
+  color: #fff;
+  font-size: 1rem;
+}
+#mainBanner > div:nth-child(2) {
+  background-color: #fff;
+  position: absolute;
+}
+#mainBanner > div:nth-child(3) {
+  background-color: rgb(116, 20, 20);
+  position: absolute;
+}
+#mainBanner > div:nth-child(4) {
+  background-color: rgb(49, 49, 49);
+  position: absolute;
+}
+
+#mainBest {
+  margin-top: 7vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#mainBest > div:nth-child(1) {
+  margin-bottom: 2vh;
+}
+#mainBest > div:nth-child(1) > h1 {
+  font-family: "Abril Fatface", cursive;
+  color: #1B4158;
+  font-size: 2rem;
+}
+#mainBest > .grid > div {
+  display: flex;
+  flex-direction: column;
+}
+#mainBest > .grid > div > div:nth-child(1) {
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-size: cover;
+}
+#mainBest > .grid > div > div:nth-child(2) {
+  margin-top: 1vh;
+}
+#mainBest > .grid > div > div:nth-child(3) {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+#mainBest > .grid > div > div:nth-child(3) > div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+}
+#mainBest > .grid > div > div:nth-child(3) > div:nth-child(1) > div {
+  width: 3vh;
+  height: 3vh;
+  margin-right: 2vw;
+}
+#mainBest > .grid > div > div:nth-child(3) > div:nth-child(2) {
+  font-size: 1rem;
+}
+#mainBest > .grid > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) {
+  background-color: black;
+}
+#mainBest > .grid > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
+  border: 1px solid black;
+}
+#mainBest > .grid > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) {
+  background-color: black;
+}
+#mainBest > .grid > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
+  background-color: #005A19;
+}
+#mainBest > .grid > div:nth-child(3) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) {
+  background-color: black;
+  background: #FF7917;
+}
+#mainBest > .grid > div:nth-child(3) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
+  background-color: #BC0000;
+}
+#mainBest > .grid > div:nth-child(4) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) {
+  background-color: #BC0000;
+}
+#mainBest > .grid > div:nth-child(4) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
+  background-color: #FFD76F;
+}
+#mainBest > .grid > div:nth-child(4) > div:nth-child(3) > div:nth-child(1) > div:nth-child(3) {
+  background-color: #DE50D8;
+}
+#mainBest > div:nth-child(3) {
+  width: 40vw;
+  border: 1px solid #1B4158;
+  height: 5vh;
+  color: #1B4158;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10vh;
+}
+
+#mainForyou {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#mainForyou > div:nth-child(1) {
+  margin-bottom: 2vh;
+}
+#mainForyou > div:nth-child(1) > h1 {
+  font-family: "Abril Fatface", cursive;
+  color: #1B4158;
+  font-size: 2rem;
+}
+#mainForyou > .grid > div {
+  display: flex;
+  flex-direction: column;
+}
+#mainForyou > .grid > div > div:nth-child(1) {
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-size: cover;
+}
+#mainForyou > .grid > div > div:nth-child(2) {
+  margin-top: 1vh;
+}
+#mainForyou > .grid > div > div:nth-child(3) {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+#mainForyou > .grid > div > div:nth-child(3) > div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+}
+#mainForyou > .grid > div > div:nth-child(3) > div:nth-child(1) > div {
+  width: 3vh;
+  height: 3vh;
+  margin-right: 2vw;
+}
+#mainForyou > .grid > div > div:nth-child(3) > div:nth-child(2) {
+  font-size: 1rem;
+}
+#mainForyou > .grid > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) {
+  background-color: black;
+}
+#mainForyou > .grid > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
+  border: 1px solid black;
+}
+#mainForyou > .grid > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) {
+  border: 1px solid black;
+}
+#mainForyou > .grid > div:nth-child(3) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) {
+  background-color: #FFD76F;
+}
+#mainForyou > .grid > div:nth-child(3) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
+  background-color: #5D2C02;
+}
+#mainForyou > .grid > div:nth-child(4) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) {
+  background-color: black;
+}
+#mainForyou > .grid > div:nth-child(4) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
+  border: 1px solid black;
+}
+#mainForyou > .grid > div:nth-child(4) > div:nth-child(3) > div:nth-child(1) > div:nth-child(3) {
+  background-color: #FFD76F;
+}
+#mainForyou > div:nth-child(3) {
+  width: 40vw;
+  border: 1px solid #1B4158;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vh;
+}
+
+#mainMagazine {
+  margin-top: 7vh;
+}
+#mainMagazine > div:nth-child(1) {
+  margin-bottom: 7vh;
+}
+#mainMagazine > div:nth-child(1) > h1 {
+  font-family: "Abril Fatface", cursive;
+  color: #1B4158;
+  font-size: 2rem;
+}
+#mainMagazine > div:nth-child(2) > div {
+  margin-top: 5vh;
+  width: 100vw;
+}
+#mainMagazine > div:nth-child(2) > div > img {
+  width: 100%;
+}
+#mainMagazine > div:nth-child(2) > div:nth-child(2) {
+  margin-top: 3vh;
+}
+
+#mainAd {
+  margin-top: 7vh;
+  margin-bottom: 10vh;
+}
+#mainAd > div > img {
+  width: 100%;
+}
+#mainAd > div:nth-child(2) {
+  margin-top: 1vh;
+}/*# sourceMappingURL=main2.css.map */

@@ -1,0 +1,115 @@
+#root {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 90vw;
+}
+main > div:nth-child(2) {
+  margin-top: 8vh;
+  width: 90vw;
+}
+main > div:nth-child(2) > img {
+  width: 100%;
+}
+main > div:nth-child(3) {
+  margin-top: 3vh;
+  display: flex;
+  flex-direction: column;
+}
+main > div:nth-child(3) > div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  padding: 3vw;
+  color: var(--color-1);
+}
+main > div:nth-child(3) > div:nth-child(2) > ul:nth-child(2) {
+  text-align: end;
+}
+main > div:nth-child(4) {
+  margin-top: 3vh;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8vh;
+}
+main > div:nth-child(4) > div:nth-child(1) {
+  width: 20vw;
+  height: 5vh;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-5);
+}
+main > div:nth-child(4) > div:nth-child(2) {
+  width: 55vw;
+  height: 5vh;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-5);
+}
+
+section {
+  margin-top: 8vh;
+  height: 55vh;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  height: 15vh;
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: space-between;
+}
+.container > div:nth-child(2) {
+  height: 15vh;
+  width: 15vh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-size: cover;
+}
+.container > div:nth-child(3) {
+  width: 50vw;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.container > div:nth-child(3) > div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type=number] {
+  width: 7vw;
+  align-items: center;
+  border: 1px solid var(--color-4);
+  text-align: center;
+  /* border-radius: 5px; */
+}
+
+input[type=checkbox] {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border: 1px solid var(--color-4);
+  background: white;
+}
+
+input[type=checkbox]:hover {
+  border-color: var(--color-5);
+}
+
+input[type=checkbox]:checked {
+  background-color: var(--color-5);
+}/*# sourceMappingURL=basket.css.map */
