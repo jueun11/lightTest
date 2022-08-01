@@ -29,4 +29,12 @@ for (let i=0; i< foryouPhoto.length; i++){
   });
 }
 
+const list = Array.from(document.getElementsByClassName('list'));
+
+for (let i=0; i< list.length; i++){
+  list[i].addEventListener('click',function(){
+    location.href="./list.html";
+  });
+}
+
 
