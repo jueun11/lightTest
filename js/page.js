@@ -29,3 +29,16 @@ Btn.addEventListener('click',function(){
     information.children[1].style.display = "none";
   }
 });
+
+
+const pageBasket = document.getElementsByClassName('pagebasket')[0];
+
+const pageorder = document.getElementsByClassName('pageorder')[0];
+
+pageBasket.addEventListener('click',function(){
+  location.href="./basket.html";
+});
+
+pageorder.addEventListener('click',function(){
+  location.href="./order.html";
+});
