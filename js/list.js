@@ -9,3 +9,11 @@ listPhoto[4].style.backgroundImage = "url(/css/image/list/5.jpg)";
 listPhoto[5].style.backgroundImage = "url(/css/image/list/6.jpg)";
 
 
+
+for (let i=0; i< listPhoto.length; i++){
+  listPhoto[i].addEventListener('click',function(){
+    location.href="./page-renewal.html";
+  });
+}
+
+
