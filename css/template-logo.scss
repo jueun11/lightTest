@@ -25,6 +25,14 @@
   font-family: 'GowunBatang-Regular';
   /* font-family: 'KoPubDotumMedium'; */
   /* letter-spacing: 0px; */
+  // overflow-y: hidden;
+}
+body{
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 :root {
   --color-1:#1b4159;
