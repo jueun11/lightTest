@@ -21,6 +21,7 @@ main{
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #1B4158;
 }
 .line::before {
   content: "";
@@ -149,14 +150,17 @@ main{
           //설명
           // border: 1px solid green;
           margin-top: 1vh;
+          color: #1B4158;
         }
         &>div:nth-child(3){
           //컬러와 가격
           margin-top: 5vh;
           // border: 1px solid green;
+          color: #1B4158;
           display: flex;
           justify-content: space-between;
           align-items: flex-end;
+          // color: #1B4158;
           &>div:nth-child(1){
             // border: 1px solid red;
             display: flex;
@@ -172,6 +176,7 @@ main{
           &>div:nth-child(2){
             // border: 1px solid red;
             font-size: 1rem;
+            color: #1B4158;
           }
         }
       }
@@ -276,6 +281,7 @@ main{
           //설명
           // border: 1px solid green;
           margin-top: 1vh;
+          color: #1B4158;
         }
         &>div:nth-child(3){
           //컬러와 가격
@@ -284,6 +290,7 @@ main{
           display: flex;
           justify-content: space-between;
           align-items: flex-end;
+          color: #1B4158;
           &>div:nth-child(1){
             // border: 1px solid red;
             display: flex;
