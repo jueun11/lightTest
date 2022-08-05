@@ -18,6 +18,15 @@
   /* letter-spacing: 0px; */
 }
 
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
 :root {
   --color-1:#1b4159;
   --color-2:#142126;

@@ -19,7 +19,13 @@
   --color-4:#a68a7b;
   --color-5:#735b58;
 }
-
+body{
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
 /* #root {
   width: 100vw;
   height: 145vh;
