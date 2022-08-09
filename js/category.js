@@ -1,5 +1,6 @@
 //*페이지 이동
 
+
 const search = document.getElementsByClassName('search')[0];
 console.log(search);
 
